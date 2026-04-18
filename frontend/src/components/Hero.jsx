@@ -19,9 +19,9 @@ export const Hero = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left Side - Text Content */}
-          <div className="max-w-2xl">
+        <div className="max-w-4xl mx-auto">
+          {/* Text Content - Centered */}
+          <div>
             <h1 className="text-6xl md:text-7xl font-light text-white mb-2 animate-fade-in">
               I'm
             </h1>
@@ -59,17 +59,6 @@ export const Hero = () => {
               >
                 Get in Touch →
               </Button>
-            </div>
-          </div>
-
-          {/* Right Side - Image */}
-          <div className="flex justify-center md:justify-end animate-fade-in-delay-2">
-            <div className="relative">
-              <img 
-                src={personalInfo.profileImage}
-                alt={personalInfo.name}
-                className="relative w-full max-w-md object-cover"
-              />
             </div>
           </div>
         </div>

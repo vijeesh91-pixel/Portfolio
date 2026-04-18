@@ -30,9 +30,13 @@ export const Header = () => {
         <div className="flex justify-between items-center">
           <button 
             onClick={() => scrollToSection('hero')}
-            className="text-white font-bold text-lg tracking-wide hover:text-[#ff6b35] transition-colors duration-300"
+            className="hover:opacity-80 transition-opacity duration-300"
           >
-            vijeesh.thattante.valappil
+            <img 
+              src={personalInfo.logo} 
+              alt="Vijeesh"
+              className="h-8"
+            />
           </button>
           
           <div className="flex items-center gap-2 text-white hover:text-[#ff6b35] transition-colors duration-300">

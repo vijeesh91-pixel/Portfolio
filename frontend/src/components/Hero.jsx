@@ -36,18 +36,13 @@ export const Hero = () => {
               <p>{personalInfo.introduction.part3}</p>
             </div>
 
-            <div className="flex flex-wrap gap-4 mb-10 animate-fade-in-delay-3">
-              {personalInfo.skills.map((skill, index) => (
-                <div 
-                  key={index}
-                  className="skill-badge group"
-                  style={{ animationDelay: `${index * 100}ms` }}
-                >
-                  <span className="text-lg font-bold text-white group-hover:scale-110 transition-transform duration-300 inline-block">
-                    {skill}
-                  </span>
-                </div>
-              ))}
+            {/* Skills Image */}
+            <div className="mb-10 animate-fade-in-delay-3">
+              <img 
+                src={personalInfo.logoColorful}
+                alt="Skills"
+                className="h-16 object-contain"
+              />
             </div>
 
             <div className="flex flex-wrap gap-4 animate-fade-in-delay-4">
@@ -73,7 +68,7 @@ export const Hero = () => {
               <img 
                 src={personalInfo.profileImage}
                 alt={personalInfo.name}
-                className="relative w-full max-w-md rounded-full object-cover"
+                className="relative w-full max-w-md object-cover"
               />
             </div>
           </div>

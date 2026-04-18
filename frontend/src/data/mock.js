@@ -25,7 +25,7 @@ export const projects = [
     title: "Poonch | Pet Food delivery app",
     category: "Mobile App",
     image: "https://images.unsplash.com/photo-1760888549280-4aef010720bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxmb29kJTIwZGVsaXZlcnklMjBtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjByZXN0YXVyYW50fGVufDB8fHx8MTc3NjQ5NTk3M3ww&ixlib=rb-4.1.0&q=85",
-    detailImage: "https://images.unsplash.com/photo-1760888549280-4aef010720bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxmb29kJTIwZGVsaXZlcnklMjBtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjByZXN0YXVyYW50fGVufDB8fHx8MTc3NjQ5NTk3M3ww&ixlib=rb-4.1.0&q=85",
+    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/dnb1d8sd_Poonch.png",
     description: "A modern pet food delivery mobile application",
     year: "2023",
     client: "Startup"
@@ -58,7 +58,7 @@ export const projects = [
     title: "Receive | Perks for startups",
     category: "SaaS Platform",
     image: "https://images.unsplash.com/photo-1558002038-1055907df827?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGxvY2slMjB0ZWNobm9sb2d5JTIwc3RhcnR1cCUyMGlubm92YXRpb258ZW58MHx8fHwxNzc2NDk1OTczfDA&ixlib=rb-4.1.0&q=85",
-    detailImage: "https://images.unsplash.com/photo-1558002038-1055907df827?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGxvY2slMjB0ZWNobm9sb2d5JTIwc3RhcnR1cCUyMGlubm92YXRpb258ZW58MHx8fHwxNzc2NDk1OTczfDA&ixlib=rb-4.1.0&q=85",
+    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/gvsd4hya_Recerve.png",
     description: "Perks platform for startups",
     year: "2021",
     client: "Receive"
@@ -91,7 +91,7 @@ export const projects = [
     title: "Digital / Print designs",
     category: "Design",
     image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/2bs8u8nt_Digital.png",
-    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/2bs8u8nt_Digital.png",
+    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/qs7otg3l_Print%20and%20Ads.png",
     description: "Digital and print design projects",
     year: "2022",
     client: "Various"
@@ -102,7 +102,7 @@ export const projects = [
     title: "Stimulus cheque | Investment",
     category: "Fintech",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxpbnZlc3RtZW50JTIwZmludGVjaCUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NzY0OTU5NzN8MA&ixlib=rb-4.1.0&q=85",
-    detailImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxpbnZlc3RtZW50JTIwZmludGVjaCUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NzY0OTU5NzN8MA&ixlib=rb-4.1.0&q=85",
+    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/lb115uqe_Stimulus%20cheque.png",
     description: "Investment platform for stimulus payments",
     year: "2021",
     client: "Financial Services"

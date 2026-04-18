@@ -41,7 +41,7 @@ export const Hero = () => {
               <img 
                 src={personalInfo.logoColorful}
                 alt="Skills"
-                className="h-16 object-contain"
+                className="h-12 object-contain"
               />
             </div>
 

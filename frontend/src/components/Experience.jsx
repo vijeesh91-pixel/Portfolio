@@ -1,19 +1,17 @@
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
-import { experience, teamMembers } from '../data/mock';
+import { experience } from '../data/mock';
 
 export const Experience = () => {
-  const allExperience = [...experience, ...teamMembers];
-
   return (
     <section id="experience" className="py-24 bg-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-6xl font-bold mb-16">
+        <h2 className="text-5xl md:text-6xl font-bold mb-16">
           Experience<span className="text-[#ff6b35]">.</span>
         </h2>
         
         <div className="max-w-4xl space-y-12">
-          {allExperience.map((item, companyIndex) => (
+          {experience.map((item, companyIndex) => (
             <div key={companyIndex} className="experience-item">
               <div className="flex gap-6">
                 <div className="flex flex-col items-center">

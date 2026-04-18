@@ -3,11 +3,17 @@
 export const personalInfo = {
   name: "Vijeesh",
   title: "UI/UX Designer",
-  phone: "+971502857076",
-  email: "vthattantevalappil@odddup.com",
-  profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-  introduction: `A highly creative UI/UX designer with extensive experience in crafting innovative digital solutions. With a deep understanding of the fintech industry, I transform complex problems into elegant, user-friendly designs. My approach combines research, strategic thinking, and a commitment to delivering exceptional user experiences that drive business growth.`,
-  skills: ["Ps", "Ai", "In", "Fn", "Xd"],
+  phone: "+971509045108",
+  email: "vijeesh91@gmail.com",
+  profileImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/jwoh5bzr_Group%20427318988.png",
+  logo: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/6rwwfokn_LogoV.png",
+  logoColorful: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/iozsg2ao_Frame%20513%201.png",
+  introduction: {
+    part1: "A UI/UX Designer and Co-Founder of a hardware startup, with a background in fintech. I graduated with a Bachelor of Technology in Computer Science and have worked on a bunch of hardware projects as well as data-driven apps in the fintech space. Currently, I am focused on improving my product design skills and tools.",
+    part2: "As a UI/UX developer, I bring together my skills in both design and development to create seamless and responsive user experiences. I am highly collaborative and enjoy working with designers, stakeholders, and other developers to bring projects to life. Additionally, I am always eager to learn and stay up-to-date with the latest technologies and best practices in UI/UX development.",
+    part3: "Currently, I am currently working as a UI/UX Designer at Oddup Ltd."
+  },
+  skills: ["Ps", "Ai", "In", "F", "N"],
   tagline: "Make experience as simple as possible.",
   keywords: ["UI/UX", "Fintech", "Webflow", "Figma"]
 };
@@ -15,23 +21,23 @@ export const personalInfo = {
 export const projects = [
   {
     id: 1,
-    slug: "nairobi-food-delivery",
-    title: "Nairobi | Hot Food delivery app",
+    slug: "poonch-food-delivery",
+    title: "Poonch | Pet Food delivery app",
     category: "Mobile App",
     image: "https://images.unsplash.com/photo-1760888549280-4aef010720bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxmb29kJTIwZGVsaXZlcnklMjBtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjByZXN0YXVyYW50fGVufDB8fHx8MTc3NjQ5NTk3M3ww&ixlib=rb-4.1.0&q=85",
     detailImage: "https://images.unsplash.com/photo-1760888549280-4aef010720bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxmb29kJTIwZGVsaXZlcnklMjBtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjByZXN0YXVyYW50fGVufDB8fHx8MTc3NjQ5NTk3M3ww&ixlib=rb-4.1.0&q=85",
-    description: "A modern food delivery mobile application designed for the Nairobi market",
+    description: "A modern pet food delivery mobile application",
     year: "2023",
     client: "Startup"
   },
   {
     id: 2,
-    slug: "alluva-fintech",
-    title: "Alluva | Fintech SaaS",
-    category: "Web Dashboard",
+    slug: "alluva-predict-earn",
+    title: "Alluva | Predict and earn",
+    category: "Fintech Platform",
     image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/sbwitcb0_Alluva.png",
     detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/z7v8spaw_Alluva.png",
-    description: "Comprehensive fintech dashboard platform with advanced analytics and data visualization",
+    description: "Prediction platform with earnings system",
     year: "2022",
     client: "Alluva Inc"
   },
@@ -42,20 +48,20 @@ export const projects = [
     category: "Web Platform",
     image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/uu2bpuvm_ODDup%20case.png",
     detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/fbdb0c4o_Oddup.jpg",
-    description: "Startup intelligence platform providing data-driven insights for investors",
+    description: "Startup intelligence platform",
     year: "2022",
     client: "Oddup Ltd"
   },
   {
     id: 4,
-    slug: "receive-locks",
-    title: "Receive | Locks & Startups",
-    category: "IoT Design",
+    slug: "receive-perks",
+    title: "Receive | Perks for startups",
+    category: "SaaS Platform",
     image: "https://images.unsplash.com/photo-1558002038-1055907df827?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGxvY2slMjB0ZWNobm9sb2d5JTIwc3RhcnR1cCUyMGlubm92YXRpb258ZW58MHx8fHwxNzc2NDk1OTczfDA&ixlib=rb-4.1.0&q=85",
     detailImage: "https://images.unsplash.com/photo-1558002038-1055907df827?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGxvY2slMjB0ZWNobm9sb2d5JTIwc3RhcnR1cCUyMGlubm92YXRpb258ZW58MHx8fHwxNzc2NDk1OTczfDA&ixlib=rb-4.1.0&q=85",
-    description: "Smart lock technology platform for modern security solutions",
+    description: "Perks platform for startups",
     year: "2021",
-    client: "Receive Tech"
+    client: "Receive"
   },
   {
     id: 5,
@@ -64,7 +70,7 @@ export const projects = [
     category: "UX/UI Audit",
     image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/2bs8u8nt_Digital.png",
     detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/bd9qwoi7_Oddup%20Case%20Study.png",
-    description: "Comprehensive UX/UI and SEO audit for Oddup platform",
+    description: "Comprehensive UX/UI and SEO audit",
     year: "2020",
     client: "Oddup Ltd"
   },
@@ -75,111 +81,97 @@ export const projects = [
     category: "Mobile App",
     image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/j14167g6_NOTIFYf.png",
     detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/lhqg1yhu_Notify.png",
-    description: "Cryptocurrency price alert mobile application with real-time notifications",
+    description: "Cryptocurrency price alert mobile application",
     year: "2023",
     client: "Notify Team"
   },
   {
     id: 7,
-    slug: "rizmo-investment",
-    title: "Rizmo & lorem | Investment",
-    category: "Financial Platform",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxpbnZlc3RtZW50JTIwZmludGVjaCUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NzY0OTU5NzN8MA&ixlib=rb-4.1.0&q=85",
-    detailImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxpbnZlc3RtZW50JTIwZmludGVjaCUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NzY0OTU5NzN8MA&ixlib=rb-4.1.0&q=85",
-    description: "Investment management platform with portfolio tracking and analytics",
+    slug: "digital-print-designs",
+    title: "Digital / Print designs",
+    category: "Design",
+    image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/2bs8u8nt_Digital.png",
+    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/2bs8u8nt_Digital.png",
+    description: "Digital and print design projects",
     year: "2022",
-    client: "Rizmo Financial"
+    client: "Various"
   },
   {
     id: 8,
-    slug: "situnite-fintech",
-    title: "Situnite Fintech | Investment",
-    category: "Investment App",
-    image: "https://images.unsplash.com/photo-1556742205-e10c9486e506?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxmb29kJTIwZGVsaXZlcnklMjBtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjByZXN0YXVyYW50fGVufDB8fHx8MTc3NjQ5NTk3M3ww&ixlib=rb-4.1.0&q=85",
-    detailImage: "https://images.unsplash.com/photo-1556742205-e10c9486e506?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxmb29kJTIwZGVsaXZlcnklMjBtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjByZXN0YXVyYW50fGVufDB8fHx8MTc3NjQ5NTk3M3ww&ixlib=rb-4.1.0&q=85",
-    description: "Fintech investment platform for emerging markets",
+    slug: "stimulus-investment",
+    title: "Stimulus cheque | Investment",
+    category: "Fintech",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxpbnZlc3RtZW50JTIwZmludGVjaCUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NzY0OTU5NzN8MA&ixlib=rb-4.1.0&q=85",
+    detailImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxpbnZlc3RtZW50JTIwZmludGVjaCUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NzY0OTU5NzN8MA&ixlib=rb-4.1.0&q=85",
+    description: "Investment platform for stimulus payments",
     year: "2021",
-    client: "Situnite"
+    client: "Financial Services"
   },
   {
     id: 9,
-    slug: "caspo-branding",
-    title: "Caspo | Healthtech Startup",
+    slug: "caspo-hydrogen-cooktop",
+    title: "Caspo | Hydrogen cooktop",
     category: "Branding",
     image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/4j75eory_caspo.png",
     detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/q4nmdc63_Branding%20Caspo.png",
-    description: "Complete branding project for healthtech startup including logo, colors, and brand identity",
+    description: "Complete branding for hydrogen cooktop startup",
     year: "2023",
-    client: "Caspo Health"
+    client: "Caspo"
   }
 ];
 
 export const experience = [
   {
-    company: "Odddup",
+    company: "Oddup",
     roles: [
       {
         title: "Sr UI/UX Designer",
-        duration: "2020 - 2022",
-        description: "Led the design direction for Odddup's flagship products, creating intuitive interfaces for complex financial data. Collaborated with cross-border teams to deliver user-centric solutions that increased user engagement by 45%.",
+        duration: "Jan 2020 - Present",
+        description: "Led the design direction for Oddup's flagship products, creating intuitive interfaces for complex financial data. Collaborated with cross-border teams to deliver user-centric solutions.",
         skills: ["Figma", "Webflow", "Design Systems", "User Research"]
       }
     ]
   },
   {
-    company: "UI/UX Designer",
+    company: "Alluva",
     roles: [
       {
-        title: "Freelance",
-        duration: "2018 - 2020",
-        description: "Worked with various startups and established companies to transform their digital presence. Specialized in fintech and SaaS products, delivering end-to-end design solutions from research to final implementation.",
-        skills: ["UI Design", "UX Research", "Prototyping", "Client Management"]
+        title: "UI/UX Designer",
+        duration: "Jul 2019 - Dec 2019",
+        description: "Designed prediction platform interfaces focusing on user engagement and gamification elements.",
+        skills: ["UI Design", "UX Research", "Prototyping"]
       }
     ]
   },
   {
-    company: "Interface Designer",
+    company: "Redrvville",
     roles: [
       {
-        title: "Freelance",
-        duration: "2016 - 2018",
-        description: "Focused on creating beautiful and functional interfaces for mobile and web applications. Developed strong expertise in visual design principles and interaction patterns that delight users.",
+        title: "Interface Designer",
+        duration: "Jan 2018 - Jun 2019",
+        description: "Created beautiful and functional interfaces for mobile and web applications.",
         skills: ["Visual Design", "Interaction Design", "Adobe Creative Suite"]
       }
     ]
   },
   {
-    company: "Graphics Designer",
+    company: "Caspo LLC",
     roles: [
       {
-        title: "Freelance",
-        duration: "2014 - 2016",
-        description: "Started career creating brand identities, marketing materials, and digital graphics for local businesses. Built a strong foundation in design principles and client communication.",
-        skills: ["Branding", "Print Design", "Digital Graphics", "Illustration"]
-      }
-    ]
-  }
-];
-
-export const teamMembers = [
-  {
-    company: "Redrvville",
-    roles: [
-      {
-        title: "Team Member",
-        duration: "2020 - Present",
-        description: "Active contributor to the design community, mentoring junior designers and participating in design critiques. Focused on fostering a culture of continuous learning and collaboration.",
-        skills: ["Mentorship", "Design Leadership", "Team Collaboration"]
+        title: "Graphics Designer",
+        duration: "Jul 2016 - Dec 2017",
+        description: "Developed brand identities and marketing materials for hardware startup.",
+        skills: ["Branding", "Print Design", "Digital Graphics"]
       }
     ]
   },
   {
-    company: "Ergo LI",
+    company: "Reinwo Labs",
     roles: [
       {
         title: "Co-Founder",
-        duration: "2018 - 2020",
-        description: "Co-founded a design consultancy focused on helping startups establish their design foundations. Led multiple successful projects from concept to launch.",
+        duration: "Jan 2015 - Jun 2016",
+        description: "Co-founded design consultancy focused on helping startups establish their design foundations.",
         skills: ["Business Strategy", "Client Relations", "Project Management"]
       }
     ]
@@ -187,9 +179,9 @@ export const teamMembers = [
 ];
 
 export const education = {
-  degree: "Bachelor - Technology - Computer Science",
-  university: "Indus University, Ahmedabad - Gujarat",
-  duration: "2006 - 2010",
+  degree: "Bachelor of Technology - Computer Science",
+  university: "Cochin University of Science and Technology",
+  duration: "2010 - 2014",
   activities: [
     "Participated in various tech seminars and workshops focused on emerging technologies",
     "Completed multiple design certification courses in UI/UX and digital product design",

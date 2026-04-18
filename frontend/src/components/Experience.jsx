@@ -1,8 +1,97 @@
-import React from 'react';
-import { ChevronDown } from 'lucide-react';
-import { experience } from '../data/mock';
+import React, { useState } from 'react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from './ui/accordion';
 
 export const Experience = () => {
+  const experienceData = [
+    {
+      company: "Oddup",
+      roles: [
+        {
+          title: "Sr UI/UX Designer",
+          company: "Oddup",
+          duration: "Dec 2024 - Present (1 yr 5 mos+)",
+          description: "Collaborating with the tech team to develop the Oddup trading platform Designing high fidelity, data-dense dashboards and complex application interfaces.",
+          skills: ["Product Design", "Figma", "Interaction Design", "Data Visualization"]
+        },
+        {
+          title: "UI/UX Designer",
+          company: "Oddup",
+          duration: "Jan 2022 - Dec 2024 (3 yrs)",
+          description: "Worked with marketing and tech teams to develop and update core products. Handled data-driven design dashboards, ran metrics, and campaigns.",
+          skills: ["User Interface Design", "Interaction Design", "Marketing", "Email Campaigns"]
+        },
+        {
+          title: "Interface Designer",
+          company: "Oddup",
+          duration: "Sep 2019 - Jan 2022 (2 yrs 5 mos)",
+          description: "Promoted to UI Designer for various sub-projects across the Oddup product suite. Collaborated with the marketing team on Recerve, Alluva, Stimulus Cheque, and Oddup product videos, generation, email design and digital assets.",
+          skills: ["Animation", "Branding", "Wireframing", "User Interface Design"]
+        },
+        {
+          title: "Graphics Designer",
+          company: "Oddup",
+          duration: "Sep 2018 - Oct 2019 (1 yr 2 mos)",
+          description: "Refreshed Oddup's visual identity through rebranding, website redesign, and multimedia design. Crafted digital and print advertising materials.",
+          skills: ["Wireframing", "Branding", "Visual Design"]
+        }
+      ]
+    },
+    {
+      company: "Alluva",
+      roles: [
+        {
+          title: "Team Member",
+          company: "Alluva",
+          duration: "Jan 2019 - Jul 2022 (3 yrs 7 mos)",
+          description: "Contributed to the design of Alluva, a platform incentivizing cryptocurrency asset prediction. Focused on analyst-driven data visualization and market insight features.",
+          skills: ["User Research", "Wireframing", "UI Design"]
+        }
+      ]
+    },
+    {
+      company: "Redrawlife",
+      roles: [
+        {
+          title: "Designer",
+          company: "Redrawlife",
+          duration: "Jan 2017 - Sep 2018 (1 yr 9 mos)",
+          description: "Designed marketing materials and interaction flows to support business growth.",
+          skills: ["Wireframing", "Figma", "Interaction Design"]
+        }
+      ]
+    },
+    {
+      company: "Caspo LLC",
+      roles: [
+        {
+          title: "Co-Founder",
+          company: "Caspo LLC",
+          duration: "Jan 2016 - Dec 2017 (2 yrs)",
+          description: "Developed and iterated on a smart cooking system that produces and uses hydrogen fuel Led product development from concept to commercial market launch.",
+          skills: ["Product Development", "Startups", "Entrepreneurship"]
+        }
+      ]
+    },
+    {
+      company: "Reinwo Labs",
+      roles: [
+        {
+          title: "Co-Founder",
+          company: "Reinwo Labs",
+          duration: "Aug 2014 - Dec 2016 (2 yrs 5 mos)",
+          description: "Co-founded Reinwo Labs, which designed a system converting tap water to usable hydrogen gas for cooking.",
+          skills: ["Product Design", "Engineering", "Startups"]
+        }
+      ]
+    }
+  ];
+
   return (
     <section id="experience" className="py-24 bg-white">
       <div className="container mx-auto px-6">
@@ -10,51 +99,47 @@ export const Experience = () => {
           Experience<span className="text-[#ff6b35]">.</span>
         </h2>
         
-        <div className="max-w-4xl space-y-12">
-          {experience.map((item, companyIndex) => (
-            <div key={companyIndex} className="experience-item">
-              <div className="flex gap-6">
-                <div className="flex flex-col items-center">
-                  <div className="w-1 bg-[#ff6b35] flex-grow"></div>
-                  <ChevronDown className="text-[#ff6b35] mt-4" size={24} />
-                </div>
-                
-                <div className="flex-1 pb-8">
-                  <h3 className="text-3xl font-bold text-[#ff6b35] mb-6">
-                    {item.company}
-                  </h3>
-                  
+        <div className="max-w-5xl">
+          <Accordion type="multiple" className="space-y-4">
+            {experienceData.map((item, index) => (
+              <AccordionItem 
+                key={index} 
+                value={`item-${index}`}
+                className="border border-gray-200 rounded-lg overflow-hidden"
+              >
+                <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 hover:no-underline">
+                  <div className="flex justify-between items-center w-full">
+                    <h3 className="text-2xl font-bold text-black">
+                      {item.company}
+                    </h3>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6 bg-black text-white">
                   {item.roles.map((role, roleIndex) => (
-                    <div key={roleIndex} className="mb-8">
-                      <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
-                        <h4 className="text-xl font-semibold text-gray-900">
-                          {role.title}
-                        </h4>
-                        <span className="text-gray-500 text-sm mt-1 md:mt-0">
-                          {role.duration}
-                        </span>
-                      </div>
-                      
-                      <p className="text-gray-600 mb-4 leading-relaxed">
+                    <div key={roleIndex} className="mb-8 last:mb-0 border-l-4 border-[#ff6b35] pl-6 ml-2">
+                      <h4 className="text-xl font-semibold text-[#4a9eff] mb-2">
+                        {role.title}
+                      </h4>
+                      <p className="text-sm text-gray-400 mb-1">{role.company}</p>
+                      <p className="text-xs text-gray-500 mb-4">{role.duration}</p>
+                      <p className="text-gray-300 mb-4 leading-relaxed">
                         {role.description}
                       </p>
-                      
                       <div className="flex flex-wrap gap-2">
+                        <span className="text-sm text-gray-400">Skills:</span>
                         {role.skills.map((skill, skillIndex) => (
-                          <span 
-                            key={skillIndex}
-                            className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full hover:bg-[#ff6b35]/10 hover:text-[#ff6b35] transition-colors duration-300"
-                          >
+                          <span key={skillIndex} className="text-sm text-gray-300">
                             {skill}
+                            {skillIndex < role.skills.length - 1 ? ', ' : ''}
                           </span>
                         ))}
                       </div>
                     </div>
                   ))}
-                </div>
-              </div>
-            </div>
-          ))}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>

@@ -35,7 +35,7 @@ export const Header = () => {
             <img 
               src={personalInfo.logo} 
               alt="Vijeesh"
-              className="h-8"
+              className="h-6"
             />
           </button>
           

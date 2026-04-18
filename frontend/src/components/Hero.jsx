@@ -11,7 +11,7 @@ export const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-[#0a0e27] via-[#1a1042] to-[#0f0b2e] pt-20">
+    <section id="hero" className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-[#0a0e27] via-[#1a1042] to-[#0f0b2e] pt-20">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 right-20 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -19,29 +19,29 @@ export const Hero = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl mx-auto">
-          {/* Text Content - Centered */}
+        <div className="max-w-4xl">
+          {/* Text Content - Left Aligned */}
           <div>
-            <h1 className="text-6xl md:text-7xl font-light text-white mb-2 animate-fade-in">
+            <h1 className="text-5xl md:text-6xl font-light text-white mb-2 animate-fade-in">
               I'm
             </h1>
-            <h1 className="text-7xl md:text-8xl font-bold text-white mb-8 animate-fade-in">
+            <h1 className="text-6xl md:text-7xl font-bold text-white mb-8 animate-fade-in">
               {personalInfo.name}
               <span className="text-[#ff6b35]">,</span>
             </h1>
             
-            <div className="space-y-6 text-gray-300 text-base leading-relaxed mb-8 animate-fade-in-delay-1">
+            <div className="space-y-6 text-gray-300 text-base leading-relaxed mb-8 animate-fade-in-delay-1 max-w-3xl">
               <p>{personalInfo.introduction.part1}</p>
               <p>{personalInfo.introduction.part2}</p>
               <p>{personalInfo.introduction.part3}</p>
             </div>
 
-            {/* Skills Image */}
+            {/* Skills Image - Reduced Size */}
             <div className="mb-10 animate-fade-in-delay-3">
               <img 
                 src={personalInfo.logoColorful}
                 alt="Skills"
-                className="h-12 object-contain"
+                className="h-10 object-contain"
               />
             </div>
 

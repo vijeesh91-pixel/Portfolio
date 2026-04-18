@@ -18,19 +18,19 @@ export const Hero = () => {
         <div className="absolute bottom-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10 max-w-6xl">
-        <div className="max-w-4xl">
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-5xl">
           {/* Text Content - Left Aligned */}
           <div>
-            <h1 className="text-6xl md:text-7xl font-light text-white mb-2 animate-fade-in">
+            <h1 className="text-7xl md:text-8xl font-light text-white mb-2 animate-fade-in">
               I'm
             </h1>
-            <h1 className="text-7xl md:text-8xl font-bold text-white mb-8 animate-fade-in">
+            <h1 className="text-8xl md:text-9xl font-bold text-white mb-8 animate-fade-in">
               {personalInfo.name}
               <span className="text-[#ff6b35]">,</span>
             </h1>
             
-            <div className="space-y-6 text-gray-300 text-lg leading-relaxed mb-8 animate-fade-in-delay-1 max-w-3xl">
+            <div className="space-y-6 text-gray-300 text-xl leading-relaxed mb-8 animate-fade-in-delay-1 max-w-4xl">
               <p>{personalInfo.introduction.part1}</p>
               <p>{personalInfo.introduction.part2}</p>
               <p>{personalInfo.introduction.part3}</p>

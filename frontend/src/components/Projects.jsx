@@ -1,7 +1,14 @@
 import React from 'react';
 import { projects } from '../data/mock';
+import { useNavigate } from 'react-router-dom';
 
 export const Projects = () => {
+  const navigate = useNavigate();
+
+  const handleProjectClick = (slug) => {
+    navigate(`/project/${slug}`);
+  };
+
   return (
     <section id="projects" className="py-24 bg-white">
       <div className="container mx-auto px-6">
@@ -13,7 +20,8 @@ export const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className="project-card group"
+              onClick={() => handleProjectClick(project.slug)}
+              className="project-card group cursor-pointer"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="aspect-[4/3] overflow-hidden rounded-lg mb-4 bg-gray-100">

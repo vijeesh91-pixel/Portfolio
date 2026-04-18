@@ -15,57 +15,102 @@ export const personalInfo = {
 export const projects = [
   {
     id: 1,
+    slug: "nairobi-food-delivery",
     title: "Nairobi | Hot Food delivery app",
     category: "Mobile App",
-    image: "https://images.unsplash.com/photo-1760888549280-4aef010720bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxmb29kJTIwZGVsaXZlcnklMjBtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjByZXN0YXVyYW50fGVufDB8fHx8MTc3NjQ5NTk3M3ww&ixlib=rb-4.1.0&q=85"
+    image: "https://images.unsplash.com/photo-1760888549280-4aef010720bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxmb29kJTIwZGVsaXZlcnklMjBtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjByZXN0YXVyYW50fGVufDB8fHx8MTc3NjQ5NTk3M3ww&ixlib=rb-4.1.0&q=85",
+    detailImage: "https://images.unsplash.com/photo-1760888549280-4aef010720bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxmb29kJTIwZGVsaXZlcnklMjBtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjByZXN0YXVyYW50fGVufDB8fHx8MTc3NjQ5NTk3M3ww&ixlib=rb-4.1.0&q=85",
+    description: "A modern food delivery mobile application designed for the Nairobi market",
+    year: "2023",
+    client: "Startup"
   },
   {
     id: 2,
+    slug: "alluva-fintech",
     title: "Alluva | Fintech SaaS",
     category: "Web Dashboard",
-    image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/sbwitcb0_Alluva.png"
+    image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/sbwitcb0_Alluva.png",
+    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/z7v8spaw_Alluva.png",
+    description: "Comprehensive fintech dashboard platform with advanced analytics and data visualization",
+    year: "2022",
+    client: "Alluva Inc"
   },
   {
     id: 3,
+    slug: "oddup-dashboard",
     title: "Oddup | Fintech Dashboard",
     category: "Web Platform",
-    image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/uu2bpuvm_ODDup%20case.png"
+    image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/uu2bpuvm_ODDup%20case.png",
+    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/fbdb0c4o_Oddup.jpg",
+    description: "Startup intelligence platform providing data-driven insights for investors",
+    year: "2022",
+    client: "Oddup Ltd"
   },
   {
     id: 4,
+    slug: "receive-locks",
     title: "Receive | Locks & Startups",
     category: "IoT Design",
-    image: "https://images.unsplash.com/photo-1558002038-1055907df827?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGxvY2slMjB0ZWNobm9sb2d5JTIwc3RhcnR1cCUyMGlubm92YXRpb258ZW58MHx8fHwxNzc2NDk1OTczfDA&ixlib=rb-4.1.0&q=85"
+    image: "https://images.unsplash.com/photo-1558002038-1055907df827?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGxvY2slMjB0ZWNobm9sb2d5JTIwc3RhcnR1cCUyMGlubm92YXRpb258ZW58MHx8fHwxNzc2NDk1OTczfDA&ixlib=rb-4.1.0&q=85",
+    detailImage: "https://images.unsplash.com/photo-1558002038-1055907df827?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGxvY2slMjB0ZWNobm9sb2d5JTIwc3RhcnR1cCUyMGlubm92YXRpb258ZW58MHx8fHwxNzc2NDk1OTczfDA&ixlib=rb-4.1.0&q=85",
+    description: "Smart lock technology platform for modern security solutions",
+    year: "2021",
+    client: "Receive Tech"
   },
   {
     id: 5,
+    slug: "oddup-case-study",
     title: "Oddup Case Study",
-    category: "Design System",
-    image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/2bs8u8nt_Digital.png"
+    category: "UX/UI Audit",
+    image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/2bs8u8nt_Digital.png",
+    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/bd9qwoi7_Oddup%20Case%20Study.png",
+    description: "Comprehensive UX/UI and SEO audit for Oddup platform",
+    year: "2020",
+    client: "Oddup Ltd"
   },
   {
     id: 6,
+    slug: "notify-price-alert",
     title: "Notify | Price alert app",
     category: "Mobile App",
-    image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/j14167g6_NOTIFYf.png"
+    image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/j14167g6_NOTIFYf.png",
+    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/lhqg1yhu_Notify.png",
+    description: "Cryptocurrency price alert mobile application with real-time notifications",
+    year: "2023",
+    client: "Notify Team"
   },
   {
     id: 7,
+    slug: "rizmo-investment",
     title: "Rizmo & lorem | Investment",
     category: "Financial Platform",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxpbnZlc3RtZW50JTIwZmludGVjaCUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NzY0OTU5NzN8MA&ixlib=rb-4.1.0&q=85"
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxpbnZlc3RtZW50JTIwZmludGVjaCUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NzY0OTU5NzN8MA&ixlib=rb-4.1.0&q=85",
+    detailImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxpbnZlc3RtZW50JTIwZmludGVjaCUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NzY0OTU5NzN8MA&ixlib=rb-4.1.0&q=85",
+    description: "Investment management platform with portfolio tracking and analytics",
+    year: "2022",
+    client: "Rizmo Financial"
   },
   {
     id: 8,
+    slug: "situnite-fintech",
     title: "Situnite Fintech | Investment",
     category: "Investment App",
-    image: "https://images.unsplash.com/photo-1556742205-e10c9486e506?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxmb29kJTIwZGVsaXZlcnklMjBtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjByZXN0YXVyYW50fGVufDB8fHx8MTc3NjQ5NTk3M3ww&ixlib=rb-4.1.0&q=85"
+    image: "https://images.unsplash.com/photo-1556742205-e10c9486e506?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxmb29kJTIwZGVsaXZlcnklMjBtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjByZXN0YXVyYW50fGVufDB8fHx8MTc3NjQ5NTk3M3ww&ixlib=rb-4.1.0&q=85",
+    detailImage: "https://images.unsplash.com/photo-1556742205-e10c9486e506?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxmb29kJTIwZGVsaXZlcnklMjBtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjByZXN0YXVyYW50fGVufDB8fHx8MTc3NjQ5NTk3M3ww&ixlib=rb-4.1.0&q=85",
+    description: "Fintech investment platform for emerging markets",
+    year: "2021",
+    client: "Situnite"
   },
   {
     id: 9,
+    slug: "caspo-branding",
     title: "Caspo | Healthtech Startup",
     category: "Branding",
-    image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/4j75eory_caspo.png"
+    image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/4j75eory_caspo.png",
+    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/q4nmdc63_Branding%20Caspo.png",
+    description: "Complete branding project for healthtech startup including logo, colors, and brand identity",
+    year: "2023",
+    client: "Caspo Health"
   }
 ];
 

@@ -1,0 +1,161 @@
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes bounceSlow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-fade-in-delay-1 {
+  animation: fadeIn 1s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-2 {
+  animation: fadeIn 1s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-3 {
+  animation: fadeIn 1s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-4 {
+  animation: fadeIn 1s ease-out 0.8s forwards;
+  opacity: 0;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounceSlow 3s ease-in-out infinite;
+}
+
+/* Skill badges */
+.skill-badge {
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.skill-badge:hover {
+  background: rgba(255, 107, 53, 0.2);
+  border-color: rgba(255, 107, 53, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+}
+
+/* Project cards */
+.project-card {
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Experience items */
+.experience-item {
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.experience-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.experience-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.experience-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.experience-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.experience-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.experience-item:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff6b35;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff5722;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .text-7xl {
+    font-size: 3rem;
+  }
+  
+  .text-8xl {
+    font-size: 3.5rem;
+  }
+  
+  .text-6xl {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,36 @@
+import React from 'react';
+import { projects } from '../data/mock';
+
+export const Projects = () => {
+  return (
+    <section id="projects" className="py-24 bg-white">
+      <div className="container mx-auto px-6">
+        <h2 className="text-6xl font-bold mb-16">
+          Projects<span className="text-[#ff6b35]">.</span>
+        </h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div
+              key={project.id}
+              className="project-card group"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <div className="aspect-[4/3] overflow-hidden rounded-lg mb-4 bg-gray-100">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-[#ff6b35] transition-colors duration-300">
+                {project.title}
+              </h3>
+              <p className="text-gray-600 text-sm">{project.category}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};

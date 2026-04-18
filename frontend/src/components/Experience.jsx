@@ -114,21 +114,21 @@ export const Experience = () => {
                     </h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6 bg-black text-white">
+                <AccordionContent className="px-6 pb-6 bg-white">
                   {item.roles.map((role, roleIndex) => (
                     <div key={roleIndex} className="mb-8 last:mb-0 border-l-4 border-[#ff6b35] pl-6 ml-2">
                       <h4 className="text-xl font-semibold text-[#4a9eff] mb-2">
                         {role.title}
                       </h4>
-                      <p className="text-sm text-gray-400 mb-1">{role.company}</p>
-                      <p className="text-xs text-gray-500 mb-4">{role.duration}</p>
-                      <p className="text-gray-300 mb-4 leading-relaxed">
+                      <p className="text-base text-gray-600 mb-1">{role.company}</p>
+                      <p className="text-sm text-gray-500 mb-4">{role.duration}</p>
+                      <p className="text-gray-700 mb-4 leading-relaxed text-base">
                         {role.description}
                       </p>
                       <div className="flex flex-wrap gap-2">
-                        <span className="text-sm text-gray-400">Skills:</span>
+                        <span className="text-base text-gray-600">Skills:</span>
                         {role.skills.map((skill, skillIndex) => (
-                          <span key={skillIndex} className="text-sm text-gray-300">
+                          <span key={skillIndex} className="text-base text-gray-700">
                             {skill}
                             {skillIndex < role.skills.length - 1 ? ', ' : ''}
                           </span>

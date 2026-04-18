@@ -22,15 +22,15 @@ export const Hero = () => {
         <div className="max-w-4xl">
           {/* Text Content - Left Aligned */}
           <div>
-            <h1 className="text-5xl md:text-6xl font-light text-white mb-2 animate-fade-in">
+            <h1 className="text-6xl md:text-7xl font-light text-white mb-2 animate-fade-in">
               I'm
             </h1>
-            <h1 className="text-6xl md:text-7xl font-bold text-white mb-8 animate-fade-in">
+            <h1 className="text-7xl md:text-8xl font-bold text-white mb-8 animate-fade-in">
               {personalInfo.name}
               <span className="text-[#ff6b35]">,</span>
             </h1>
             
-            <div className="space-y-6 text-gray-300 text-base leading-relaxed mb-8 animate-fade-in-delay-1 max-w-3xl">
+            <div className="space-y-6 text-gray-300 text-lg leading-relaxed mb-8 animate-fade-in-delay-1 max-w-3xl">
               <p>{personalInfo.introduction.part1}</p>
               <p>{personalInfo.introduction.part2}</p>
               <p>{personalInfo.introduction.part3}</p>

@@ -46,34 +46,34 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-black relative overflow-hidden">
-      {/* Footer decorative image - Fixed Right */}
-      <div className="fixed bottom-0 right-0 z-0 pointer-events-none">
+    <section id="contact" className="py-24 bg-white relative overflow-hidden">
+      {/* Footer decorative image - Within Section */}
+      <div className="absolute bottom-0 right-0 opacity-20 pointer-events-none">
         <img 
           src="https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/wgscwtf9_Footer.png"
           alt="Decorative"
-          className="w-96 h-auto object-contain opacity-50"
+          className="w-96 h-auto object-contain"
         />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-2xl">
-          <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white">
-            Let's Design <span className="text-white">Together</span>
-            <span className="text-white">.</span>
+        <div className="max-w-3xl">
+          <h2 className="text-5xl md:text-6xl font-bold mb-8 text-black">
+            Let's Design <span className="text-black">Together</span>
+            <span className="text-black">.</span>
           </h2>
           
-          <p className="text-gray-400 text-lg mb-12 max-w-xl">
+          <p className="text-gray-600 text-lg mb-12 max-w-2xl">
             Whether you have a project in mind, a role to fill, or just want to connect — my inbox is always open.
           </p>
           
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 mb-4 max-w-xl">
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 mb-4 max-w-2xl">
             <Input 
               type="email"
               placeholder="Enter Your Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 px-6 py-6 text-base rounded-lg border-2 border-gray-700 bg-gray-900 text-white focus:border-[#ff6b35] transition-colors duration-300"
+              className="flex-1 px-6 py-6 text-base rounded-lg border-2 border-gray-200 focus:border-[#ff6b35] transition-colors duration-300"
             />
             <Button 
               type="submit"
@@ -85,7 +85,7 @@ export const Contact = () => {
           </form>
           
           {/* "Now it's your turn" snippet */}
-          <div className="mb-12 max-w-xl">
+          <div className="mb-12 max-w-2xl">
             <p className="text-sm text-gray-500 italic">
               Now it's your turn to say "HI"
             </p>
@@ -98,7 +98,7 @@ export const Contact = () => {
                 <a 
                   key={index}
                   href={link.url}
-                  className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-700 hover:border-[#ff6b35] hover:bg-[#ff6b35] text-gray-400 hover:text-white transition-all duration-300"
+                  className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 hover:border-[#ff6b35] hover:bg-[#ff6b35] text-gray-600 hover:text-white transition-all duration-300"
                   aria-label={link.platform}
                 >
                   <Icon size={18} />
@@ -107,7 +107,7 @@ export const Contact = () => {
             })}
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 text-gray-500 text-sm">
+          <div className="flex flex-col sm:flex-row gap-4 text-gray-600 text-sm">
             <a 
               href={`mailto:${personalInfo.email}`}
               className="hover:text-[#ff6b35] transition-colors duration-300"

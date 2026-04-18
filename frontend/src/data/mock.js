@@ -47,7 +47,7 @@ export const projects = [
     title: "Oddup | Fintech Dashboard",
     category: "Web Platform",
     image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/nkj2bkzn_Oddup.png",
-    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/fbdb0c4o_Oddup.jpg",
+    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/re78an2h_Oddup%7CFin.png",
     description: "Startup intelligence platform",
     year: "2022",
     client: "Oddup Ltd"

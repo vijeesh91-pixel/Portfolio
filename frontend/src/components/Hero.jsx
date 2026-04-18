@@ -18,7 +18,7 @@ export const Hero = () => {
         <div className="absolute bottom-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative z-10 max-w-6xl">
         <div className="max-w-4xl">
           {/* Text Content - Left Aligned */}
           <div>

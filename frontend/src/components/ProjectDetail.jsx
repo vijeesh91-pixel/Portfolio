@@ -10,12 +10,22 @@ export const ProjectDetail = () => {
   
   const project = projects.find(p => p.slug === slug);
 
+  const handleBackClick = () => {
+    navigate('/', { replace: true });
+    setTimeout(() => {
+      const element = document.getElementById('projects');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
   if (!project) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-white">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Project Not Found</h1>
-          <Button onClick={() => navigate('/')}>
+          <Button onClick={handleBackClick}>
             <ArrowLeft className="mr-2" size={20} />
             Back to Home
           </Button>
@@ -29,7 +39,7 @@ export const ProjectDetail = () => {
       {/* Floating Back Button */}
       <div className="fixed top-6 left-6 z-50">
         <Button
-          onClick={() => navigate('/')}
+          onClick={handleBackClick}
           className="bg-white hover:bg-gray-100 text-gray-900 shadow-lg transition-all duration-300 hover:scale-105 rounded-full px-6"
         >
           <ArrowLeft className="mr-2" size={20} />

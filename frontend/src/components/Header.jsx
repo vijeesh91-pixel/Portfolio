@@ -39,7 +39,7 @@ export const Header = () => {
             />
           </button>
           
-          <div className="flex items-center gap-2 text-white hover:text-[#ff6b35] transition-colors duration-300">
+          <div className="flex items-center gap-2 text-white hover:text-[#F9A61A] transition-colors duration-300">
             <Phone size={18} />
             <span className="text-sm">{personalInfo.phone}</span>
           </div>

@@ -27,7 +27,7 @@ export const Hero = () => {
             </h1>
             <h1 className="text-8xl md:text-9xl font-bold text-white mb-8 animate-fade-in">
               {personalInfo.name}
-              <span className="text-[#ff6b35]">,</span>
+              <span className="text-[#F9A61A]">,</span>
             </h1>
             
             <div className="space-y-6 text-gray-300 text-xl leading-relaxed mb-8 animate-fade-in-delay-1 max-w-4xl">

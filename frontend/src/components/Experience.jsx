@@ -96,7 +96,7 @@ export const Experience = () => {
     <section id="experience" className="py-24 bg-white">
       <div className="container mx-auto px-6">
         <h2 className="text-5xl md:text-6xl font-bold mb-16">
-          Experience<span className="text-[#ff6b35]">.</span>
+          Experience<span className="text-[#F9A61A]">.</span>
         </h2>
         
         <div className="max-w-5xl">
@@ -116,7 +116,7 @@ export const Experience = () => {
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6 bg-white">
                   {item.roles.map((role, roleIndex) => (
-                    <div key={roleIndex} className="mb-8 last:mb-0 border-l-4 border-[#ff6b35] pl-6 ml-2">
+                    <div key={roleIndex} className="mb-8 last:mb-0 border-l-4 border-[#F9A61A] pl-6 ml-2">
                       <h4 className="text-xl font-semibold text-[#4a9eff] mb-2">
                         {role.title}
                       </h4>

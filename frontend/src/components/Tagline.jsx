@@ -17,11 +17,9 @@ export const Tagline = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl">
           <h2 className="text-6xl md:text-7xl font-bold text-white mb-8 leading-tight">
-            Believe in{' '}
-            <span className="text-[#ff6b35]">innovation</span>,{' '}
-            <span className="text-[#ff6b35]">passion</span>, and{' '}
-            <span className="text-[#ff6b35]">empathy</span>
-            <span className="text-[#ff6b35]">.</span>
+            Believe in innovation, passion, and{' '}
+            <span className="text-[#F9A61A]">empathy</span>
+            <span className="text-[#F9A61A]">.</span>
           </h2>
           
           <div className="flex flex-wrap gap-3">

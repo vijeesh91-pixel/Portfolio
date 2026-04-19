@@ -72,12 +72,12 @@ export const Contact = () => {
               placeholder="Enter Your Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 px-6 py-6 text-base rounded-lg border-2 border-gray-200 focus:border-[#ff6b35] transition-colors duration-300"
+              className="flex-1 px-6 py-6 text-base rounded-lg border-2 border-gray-200 focus:border-[#F9A61A] transition-colors duration-300"
             />
             <Button 
               type="submit"
               disabled={isSubmitting}
-              className="bg-[#ff6b35] hover:bg-[#ff5722] text-white px-10 py-6 text-base rounded-lg transition-all duration-300 hover:scale-105 disabled:opacity-50 font-semibold"
+              className="bg-[#F9A61A] hover:bg-[#ff5722] text-white px-10 py-6 text-base rounded-lg transition-all duration-300 hover:scale-105 disabled:opacity-50 font-semibold"
             >
               {isSubmitting ? 'Sending...' : 'hello!'}
             </Button>
@@ -97,7 +97,7 @@ export const Contact = () => {
                 <a 
                   key={index}
                   href={link.url}
-                  className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 hover:border-[#ff6b35] hover:bg-[#ff6b35] text-gray-600 hover:text-white transition-all duration-300"
+                  className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 hover:border-[#F9A61A] hover:bg-[#F9A61A] text-gray-600 hover:text-white transition-all duration-300"
                   aria-label={link.platform}
                 >
                   <Icon size={18} />
@@ -109,14 +109,14 @@ export const Contact = () => {
           <div className="flex flex-col sm:flex-row gap-4 text-gray-600 text-sm">
             <a 
               href={`mailto:${personalInfo.email}`}
-              className="hover:text-[#ff6b35] transition-colors duration-300"
+              className="hover:text-[#F9A61A] transition-colors duration-300"
             >
               {personalInfo.email}
             </a>
             <span className="hidden sm:inline">|</span>
             <a 
               href={`tel:${personalInfo.phone}`}
-              className="hover:text-[#ff6b35] transition-colors duration-300"
+              className="hover:text-[#F9A61A] transition-colors duration-300"
             >
               {personalInfo.phone}
             </a>

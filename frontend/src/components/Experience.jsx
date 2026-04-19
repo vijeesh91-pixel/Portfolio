@@ -93,42 +93,42 @@ export const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-24 bg-white">
-      <div className="container mx-auto px-6">
-        <h2 className="text-5xl md:text-6xl font-bold mb-16">
+    <section id="experience" className="py-32 bg-white">
+      <div className="container mx-auto px-12 md:px-16 lg:px-24">
+        <h2 className="text-7xl md:text-8xl font-bold mb-20">
           Experience<span className="text-[#F9A61A]">.</span>
         </h2>
         
-        <div className="max-w-5xl">
-          <Accordion type="multiple" className="space-y-4">
+        <div className="max-w-6xl">
+          <Accordion type="multiple" className="space-y-6">
             {experienceData.map((item, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
                 className="border border-gray-200 rounded-lg overflow-hidden"
               >
-                <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 hover:no-underline">
+                <AccordionTrigger className="px-8 py-6 hover:bg-gray-50 hover:no-underline">
                   <div className="flex justify-between items-center w-full">
-                    <h3 className="text-2xl font-bold text-black">
+                    <h3 className="text-3xl font-bold text-black">
                       {item.company}
                     </h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6 bg-white">
+                <AccordionContent className="px-8 pb-8 bg-white">
                   {item.roles.map((role, roleIndex) => (
-                    <div key={roleIndex} className="mb-8 last:mb-0 border-l-4 border-[#F9A61A] pl-6 ml-2">
-                      <h4 className="text-xl font-semibold text-[#4a9eff] mb-2">
+                    <div key={roleIndex} className="mb-10 last:mb-0 border-l-4 border-[#F9A61A] pl-8 ml-2">
+                      <h4 className="text-2xl font-semibold text-[#4a9eff] mb-3">
                         {role.title}
                       </h4>
-                      <p className="text-base text-gray-600 mb-1">{role.company}</p>
-                      <p className="text-sm text-gray-500 mb-4">{role.duration}</p>
-                      <p className="text-gray-700 mb-4 leading-relaxed text-base">
+                      <p className="text-lg text-gray-600 mb-2">{role.company}</p>
+                      <p className="text-base text-gray-500 mb-6">{role.duration}</p>
+                      <p className="text-gray-700 mb-6 leading-relaxed text-lg">
                         {role.description}
                       </p>
                       <div className="flex flex-wrap gap-2">
-                        <span className="text-base text-gray-600">Skills:</span>
+                        <span className="text-lg text-gray-600">Skills:</span>
                         {role.skills.map((skill, skillIndex) => (
-                          <span key={skillIndex} className="text-base text-gray-700">
+                          <span key={skillIndex} className="text-lg text-gray-700">
                             {skill}
                             {skillIndex < role.skills.length - 1 ? ', ' : ''}
                           </span>

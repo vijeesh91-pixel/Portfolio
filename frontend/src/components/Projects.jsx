@@ -24,17 +24,17 @@ export const Projects = () => {
               className="project-card group cursor-pointer"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="aspect-[4/3] overflow-hidden rounded-lg mb-6 bg-gray-100">
+              <div className="aspect-[4/3] overflow-hidden rounded-lg mb-4 bg-gray-100">
                 <img 
                   src={project.image} 
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <h3 className="text-2xl font-bold mb-3 group-hover:text-[#F9A61A] transition-colors duration-300">
+              <h3 className="text-xl font-bold mb-2 group-hover:text-[#F9A61A] transition-colors duration-300">
                 {project.title}
               </h3>
-              <p className="text-gray-600 text-lg">{project.category}</p>
+              <p className="text-gray-600 text-sm">{project.category}</p>
             </div>
           ))}
         </div>

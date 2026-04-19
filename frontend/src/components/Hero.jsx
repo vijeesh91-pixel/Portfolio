@@ -18,44 +18,44 @@ export const Hero = () => {
         <div className="absolute bottom-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className="container mx-auto px-12 md:px-16 lg:px-24 relative z-10">
-        <div className="max-w-7xl">
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-5xl">
           {/* Text Content - Left Aligned */}
           <div>
-            <h1 className="text-8xl md:text-9xl lg:text-[10rem] font-light text-white mb-4 animate-fade-in">
+            <h1 className="text-7xl md:text-8xl font-light text-white mb-2 animate-fade-in">
               I'm
             </h1>
-            <h1 className="text-9xl md:text-[10rem] lg:text-[12rem] font-bold text-white mb-12 animate-fade-in leading-none">
+            <h1 className="text-8xl md:text-9xl font-bold text-white mb-8 animate-fade-in leading-none">
               {personalInfo.name}
               <span className="text-[#F9A61A]">,</span>
             </h1>
             
-            <div className="space-y-8 text-gray-300 text-2xl md:text-3xl leading-relaxed mb-12 animate-fade-in-delay-1 max-w-6xl">
+            <div className="space-y-6 text-gray-300 text-xl leading-relaxed mb-8 animate-fade-in-delay-1 max-w-4xl">
               <p>{personalInfo.introduction.part1}</p>
               <p>{personalInfo.introduction.part2}</p>
               <p>{personalInfo.introduction.part3}</p>
             </div>
 
-            {/* Skills Image - Reduced Size */}
-            <div className="mb-12 animate-fade-in-delay-3">
+            {/* Skills Image */}
+            <div className="mb-10 animate-fade-in-delay-3">
               <img 
                 src={personalInfo.logoColorful}
                 alt="Skills"
-                className="h-14 object-contain"
+                className="h-10 object-contain"
               />
             </div>
 
-            <div className="flex flex-wrap gap-6 animate-fade-in-delay-4 pb-16">
+            <div className="flex flex-wrap gap-4 animate-fade-in-delay-4 pb-12">
               <Button 
                 onClick={() => scrollToSection('projects')}
-                className="bg-white text-[#0a0e27] hover:bg-gray-100 px-12 py-8 text-xl rounded-full transition-all duration-300 font-semibold"
+                className="bg-white text-[#0a0e27] hover:bg-gray-100 px-8 py-6 text-base rounded-full transition-all duration-300 font-semibold"
               >
                 View Work
               </Button>
               <Button 
                 onClick={() => scrollToSection('contact')}
                 variant="ghost"
-                className="text-white hover:bg-white/10 px-12 py-8 text-xl rounded-full transition-all duration-300 font-semibold"
+                className="text-white hover:bg-white/10 px-8 py-6 text-base rounded-full transition-all duration-300 font-semibold"
               >
                 Get in Touch →
               </Button>

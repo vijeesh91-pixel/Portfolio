@@ -94,29 +94,33 @@ export const Contact = () => {
             {socialLinks.map((link, index) => {
               const Icon = iconMap[link.icon];
               
-              // Brand colors for each platform
+              // Brand colors for each platform (shown on hover only)
               const brandColors = {
-                Mail: { bg: 'hover:bg-red-500', border: 'hover:border-red-500', text: 'text-red-500' },
-                Linkedin: { bg: 'hover:bg-[#0077B5]', border: 'hover:border-[#0077B5]', text: 'text-[#0077B5]' },
-                Instagram: { bg: 'hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600', border: 'hover:border-pink-500', text: 'text-pink-500' },
-                Behance: { bg: 'hover:bg-[#1769FF]', border: 'hover:border-[#1769FF]', text: 'text-[#1769FF]' }
+                Mail: { bg: 'hover:bg-red-500', border: 'hover:border-red-500' },
+                Linkedin: { bg: 'hover:bg-[#0077B5]', border: 'hover:border-[#0077B5]' },
+                Instagram: { bg: 'hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600', border: 'hover:border-pink-500' },
+                Behance: { bg: 'hover:bg-[#1769FF]', border: 'hover:border-[#1769FF]' }
               };
               
-              const colors = brandColors[link.icon] || { bg: 'hover:bg-gray-600', border: 'hover:border-gray-600', text: 'text-gray-600' };
+              const colors = brandColors[link.icon] || { bg: 'hover:bg-gray-600', border: 'hover:border-gray-600' };
               
               return (
                 <a 
                   key={index}
                   href={link.url}
-                  className={`w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 ${colors.border} ${colors.bg} ${colors.text} hover:text-white transition-all duration-300`}
+                  className={`w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 ${colors.border} ${colors.bg} text-gray-600 hover:text-white transition-all duration-300`}
                   aria-label={link.platform}
                 >
                   {link.icon === 'Behance' ? (
-                    <img 
-                      src="https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/8hjuqcr7_image.png" 
-                      alt="Behance"
-                      className="w-5 h-5 object-contain"
-                    />
+                    <svg 
+                      width="18" 
+                      height="18" 
+                      viewBox="0 0 24 24" 
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M6.5 4.5h3.5c1.38 0 2.5 1.12 2.5 2.5 0 .83-.37 1.57-.96 2.06.86.45 1.46 1.35 1.46 2.39 0 1.49-1.21 2.7-2.7 2.7H6.5V4.5zm2 4h1.5c.55 0 1-.45 1-1s-.45-1-1-1H8.5v2zm0 5.5h2c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5h-2v3zM15 9h6V7h-6v2zm.5 2.5c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5c1.54 0 2.85-.99 3.31-2.37h-2.05c-.25.36-.66.6-1.14.6-.83 0-1.5-.67-1.5-1.5h4.87c.01-.13.01-.27.01-.4 0-1.93-1.57-3.5-3.5-3.5zm-1.5 2.73c.08-.76.72-1.35 1.5-1.35s1.42.59 1.5 1.35h-3z"/>
+                    </svg>
                   ) : (
                     <Icon size={18} />
                   )}

@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { Button } from './ui/button';
 import { ArrowLeft } from 'lucide-react';
 import { projects } from '../data/mock';
+import { Contact } from './Contact';
 
 export const ProjectDetail = () => {
   const { slug } = useParams();
@@ -47,7 +48,7 @@ export const ProjectDetail = () => {
         </Button>
       </div>
 
-      {/* Full Image Display - No Header, No Text, Just the Image */}
+      {/* Full Image Display */}
       <div className="w-full">
         <img 
           src={project.detailImage} 
@@ -56,6 +57,9 @@ export const ProjectDetail = () => {
           loading="lazy"
         />
       </div>
+
+      {/* Footer Section */}
+      <Contact />
     </div>
   );
 };

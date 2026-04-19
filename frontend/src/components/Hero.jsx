@@ -45,7 +45,7 @@ export const Hero = () => {
               />
             </div>
 
-            <div className="flex flex-wrap gap-4 animate-fade-in-delay-4">
+            <div className="flex flex-wrap gap-4 animate-fade-in-delay-4 pb-12">
               <Button 
                 onClick={() => scrollToSection('projects')}
                 className="bg-white text-[#0a0e27] hover:bg-gray-100 px-8 py-6 text-base rounded-full transition-all duration-300 font-semibold"

@@ -5,7 +5,7 @@ export const personalInfo = {
   title: "UI/UX Designer",
   phone: "+971509045108",
   email: "vijeesh91@gmail.com",
-  profileImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/jwoh5bzr_Group%20427318988.png",
+  profileImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/rzd8ea2z_Photo.png",
   logo: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/6rwwfokn_LogoV.png",
   logoColorful: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/iozsg2ao_Frame%20513%201.png",
   introduction: {

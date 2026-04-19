@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
-import { Mail, Linkedin, Instagram, Dribbble } from 'lucide-react';
+import { Mail, Linkedin, Instagram } from 'lucide-react';
 import { personalInfo, socialLinks } from '../data/mock';
 import { toast } from 'sonner';
 
@@ -9,7 +9,7 @@ const iconMap = {
   Mail: Mail,
   Linkedin: Linkedin,
   Instagram: Instagram,
-  Dribbble: Dribbble
+  Behance: null // Custom Behance icon will be used
 };
 
 export const Contact = () => {
@@ -93,20 +93,39 @@ export const Contact = () => {
           <div className="flex gap-6 mb-8">
             {socialLinks.map((link, index) => {
               const Icon = iconMap[link.icon];
+              
+              // Brand colors for each platform
+              const brandColors = {
+                Mail: { bg: 'hover:bg-red-500', border: 'hover:border-red-500', text: 'text-red-500' },
+                Linkedin: { bg: 'hover:bg-[#0077B5]', border: 'hover:border-[#0077B5]', text: 'text-[#0077B5]' },
+                Instagram: { bg: 'hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600', border: 'hover:border-pink-500', text: 'text-pink-500' },
+                Behance: { bg: 'hover:bg-[#1769FF]', border: 'hover:border-[#1769FF]', text: 'text-[#1769FF]' }
+              };
+              
+              const colors = brandColors[link.icon] || { bg: 'hover:bg-gray-600', border: 'hover:border-gray-600', text: 'text-gray-600' };
+              
               return (
                 <a 
                   key={index}
                   href={link.url}
-                  className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 hover:border-[#F9A61A] hover:bg-[#F9A61A] text-gray-600 hover:text-white transition-all duration-300"
+                  className={`w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 ${colors.border} ${colors.bg} ${colors.text} hover:text-white transition-all duration-300`}
                   aria-label={link.platform}
                 >
-                  <Icon size={18} />
+                  {link.icon === 'Behance' ? (
+                    <img 
+                      src="https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/8hjuqcr7_image.png" 
+                      alt="Behance"
+                      className="w-5 h-5 object-contain"
+                    />
+                  ) : (
+                    <Icon size={18} />
+                  )}
                 </a>
               );
             })}
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 text-gray-600 text-sm">
+          <div className="flex flex-col sm:flex-row gap-4 text-gray-800 text-lg font-bold">
             <a 
               href={`mailto:${personalInfo.email}`}
               className="hover:text-[#F9A61A] transition-colors duration-300"

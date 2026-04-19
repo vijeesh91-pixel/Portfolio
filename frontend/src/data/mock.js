@@ -194,5 +194,5 @@ export const socialLinks = [
   { platform: "Google", icon: "Mail", url: "mailto:vijeesh91@gmail.com" },
   { platform: "LinkedIn", icon: "Linkedin", url: "https://www.linkedin.com/in/vijeeshvalappil" },
   { platform: "Instagram", icon: "Instagram", url: "https://www.instagram.com/vijeesh.valappil" },
-  { platform: "Behance", icon: "Dribbble", url: "https://www.behance.net/vijeesh91288c" }
+  { platform: "Behance", icon: "Behance", url: "https://www.behance.net/vijeesh91288c" }
 ];

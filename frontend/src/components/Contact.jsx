@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
-import { Mail, Linkedin, Instagram, Facebook, Dribbble } from 'lucide-react';
+import { Mail, Linkedin, Instagram, Dribbble } from 'lucide-react';
 import { personalInfo, socialLinks } from '../data/mock';
 import { toast } from 'sonner';
 
@@ -9,7 +9,6 @@ const iconMap = {
   Mail: Mail,
   Linkedin: Linkedin,
   Instagram: Instagram,
-  Facebook: Facebook,
   Dribbble: Dribbble
 };
 

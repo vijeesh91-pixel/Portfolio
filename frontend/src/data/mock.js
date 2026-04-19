@@ -14,7 +14,7 @@ export const personalInfo = {
     part3: "Currently, I am currently working as a UI/UX Designer at Oddup Ltd."
   },
   skills: ["Ps", "Ai", "In", "F", "N"],
-  tagline: "Make experience as simple as possible.",
+  tagline: "Believe in innovation, passion, and empathy.",
   keywords: ["UI/UX", "Fintech", "Webflow", "Figma"]
 };
 
@@ -191,9 +191,8 @@ export const education = {
 };
 
 export const socialLinks = [
-  { platform: "Google", icon: "Mail", url: "#" },
-  { platform: "LinkedIn", icon: "Linkedin", url: "#" },
-  { platform: "Instagram", icon: "Instagram", url: "#" },
-  { platform: "Facebook", icon: "Facebook", url: "#" },
-  { platform: "Behance", icon: "Dribbble", url: "#" }
+  { platform: "Google", icon: "Mail", url: "mailto:vijeesh91@gmail.com" },
+  { platform: "LinkedIn", icon: "Linkedin", url: "https://www.linkedin.com/in/vijeeshvalappil" },
+  { platform: "Instagram", icon: "Instagram", url: "https://www.instagram.com/vijeesh.valappil" },
+  { platform: "Behance", icon: "Dribbble", url: "https://www.behance.net/vijeesh91288c" }
 ];

@@ -17,10 +17,10 @@ export const Tagline = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl">
           <h2 className="text-6xl md:text-7xl font-bold text-white mb-8 leading-tight">
-            Make experience as{' '}
-            <span className="text-[#ff6b35]">simple</span>
-            <br />
-            as possible
+            Believe in{' '}
+            <span className="text-[#ff6b35]">innovation</span>,{' '}
+            <span className="text-[#ff6b35]">passion</span>, and{' '}
+            <span className="text-[#ff6b35]">empathy</span>
             <span className="text-[#ff6b35]">.</span>
           </h2>
           

@@ -108,6 +108,8 @@ export const Contact = () => {
                 <a 
                   key={index}
                   href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 ${colors.border} ${colors.bg} text-gray-600 hover:text-white transition-all duration-300`}
                   aria-label={link.platform}
                 >

@@ -36,7 +36,7 @@ export const projects = [
     title: "Alluva | Predict and earn",
     category: "Fintech Platform",
     image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/sbwitcb0_Alluva.png",
-    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/z7v8spaw_Alluva.png",
+    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/x8mb7r7n_Alluva.png",
     description: "Prediction platform with earnings system",
     year: "2022",
     client: "Alluva Inc"
@@ -47,7 +47,7 @@ export const projects = [
     title: "Oddup | Fintech Dashboard",
     category: "Web Platform",
     image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/nkj2bkzn_Oddup.png",
-    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/re78an2h_Oddup%7CFin.png",
+    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/6tqkpwsk_Oddup%7CFintech.png",
     description: "Startup intelligence platform",
     year: "2022",
     client: "Oddup Ltd"
@@ -69,7 +69,7 @@ export const projects = [
     title: "Oddup Case Study",
     category: "UX/UI Audit",
     image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/uu2bpuvm_ODDup%20case.png",
-    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/bd9qwoi7_Oddup%20Case%20Study.png",
+    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/x20lzl5k_Oddup%20Case%20Study.png",
     description: "Comprehensive UX/UI and SEO audit",
     year: "2020",
     client: "Oddup Ltd"
@@ -80,7 +80,7 @@ export const projects = [
     title: "Notify | Price alert app",
     category: "Mobile App",
     image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/j14167g6_NOTIFYf.png",
-    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/lhqg1yhu_Notify.png",
+    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/84qqd49x_Notify.png",
     description: "Cryptocurrency price alert mobile application",
     year: "2023",
     client: "Notify Team"
@@ -113,7 +113,7 @@ export const projects = [
     title: "Caspo | Hydrogen cooktop",
     category: "Branding",
     image: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/4j75eory_caspo.png",
-    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/q4nmdc63_Branding%20Caspo.png",
+    detailImage: "https://customer-assets.emergentagent.com/job_landing-builder-175/artifacts/jz4lycj5_Branding%20Caspo.png",
     description: "Complete branding for hydrogen cooktop startup",
     year: "2023",
     client: "Caspo"

@@ -39,23 +39,11 @@ export const Projects = () => {
           ))}
         </div>
 
-        {/* More Projects Coming Soon Section */}
-        <div className="mt-20 text-center relative">
-          <div className="inline-block relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#F9A61A]/20 via-[#F9A61A]/10 to-[#F9A61A]/20 blur-2xl"></div>
-            <div className="relative bg-gradient-to-br from-gray-50 to-white border-2 border-dashed border-[#F9A61A]/30 rounded-2xl px-12 py-8 hover:border-[#F9A61A]/60 transition-all duration-500 hover:scale-105">
-              <p className="text-gray-400 text-sm uppercase tracking-widest mb-2 font-semibold">Stay Tuned</p>
-              <h3 className="text-4xl font-black text-[#05063F] mb-3">
-                More Amazing Projects
-              </h3>
-              <p className="text-2xl font-bold text-[#F9A61A] mb-2">Coming Soon...</p>
-              <div className="flex justify-center gap-2 mt-4">
-                <span className="w-2 h-2 bg-[#F9A61A] rounded-full animate-bounce"></span>
-                <span className="w-2 h-2 bg-[#F9A61A] rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></span>
-                <span className="w-2 h-2 bg-[#F9A61A] rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></span>
-              </div>
-            </div>
-          </div>
+        {/* More Projects Coming Soon - Simple & Subtle */}
+        <div className="mt-16 text-center">
+          <p className="text-sm font-light text-gray-400">
+            More Projects coming soon.
+          </p>
         </div>
       </div>
     </section>

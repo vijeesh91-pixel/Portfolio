@@ -57,9 +57,9 @@ export const Contact = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl">
-          <h2 className="text-5xl md:text-6xl font-bold mb-8 text-black">
-            Let's Design <span className="text-black">Together</span>
-            <span className="text-black">.</span>
+          <h2 className="text-5xl md:text-6xl font-bold mb-8 text-[#05063F]">
+            Let's Design <span className="text-[#05063F]">Together</span>
+            <span className="text-[#F9A61A]">.</span>
           </h2>
           
           <p className="text-gray-600 text-lg mb-12 max-w-2xl">

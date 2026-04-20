@@ -1,5 +1,4 @@
 import React from 'react';
-import { ChevronDown } from 'lucide-react';
 import { education } from '../data/mock';
 
 export const Education = () => {
@@ -14,7 +13,6 @@ export const Education = () => {
           <div className="flex gap-6">
             <div className="flex flex-col items-center">
               <div className="w-1 bg-[#F9A61A] h-full"></div>
-              <ChevronDown className="text-[#F9A61A] mt-4" size={24} />
             </div>
             
             <div className="flex-1 pb-8">
@@ -23,7 +21,7 @@ export const Education = () => {
               </h3>
               
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
-                <p className="text-xl text-[#F9A61A]">
+                <p className="text-xl text-[#F9A61A] font-semibold">
                   {education.university}
                 </p>
                 <span className="text-gray-400 text-sm mt-1 md:mt-0">
@@ -31,7 +29,7 @@ export const Education = () => {
                 </span>
               </div>
               
-              <ul className="space-y-3 text-gray-300">
+              <ul className="space-y-3 text-gray-300 font-medium">
                 {education.activities.map((activity) => (
                   <li key={activity} className="flex items-start gap-3">
                     <span className="text-[#F9A61A] mt-1">•</span>

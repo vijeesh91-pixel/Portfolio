@@ -23,9 +23,9 @@ export const Tagline = () => {
           </h2>
           
           <div className="flex flex-wrap gap-3">
-            {personalInfo.keywords.map((keyword, index) => (
+            {personalInfo.keywords.map((keyword) => (
               <Badge 
-                key={index}
+                key={keyword}
                 variant="secondary"
                 className="px-6 py-3 text-lg bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-xl transition-all duration-300 hover:scale-105 rounded-lg shadow-lg"
                 style={{

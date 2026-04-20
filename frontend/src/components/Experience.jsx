@@ -101,10 +101,10 @@ export const Experience = () => {
         
         <div className="max-w-5xl">
           <Accordion type="multiple" className="space-y-4">
-            {experienceData.map((item, index) => (
+            {experienceData.map((item) => (
               <AccordionItem 
-                key={index} 
-                value={`item-${index}`}
+                key={item.company} 
+                value={`item-${item.company}`}
                 className="border border-gray-200 rounded-lg overflow-hidden"
               >
                 <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 hover:no-underline">
@@ -115,8 +115,8 @@ export const Experience = () => {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6 bg-white">
-                  {item.roles.map((role, roleIndex) => (
-                    <div key={roleIndex} className="mb-8 last:mb-0 border-l-4 border-[#F9A61A] pl-6 ml-2">
+                  {item.roles.map((role) => (
+                    <div key={`${item.company}-${role.title}-${role.duration}`} className="mb-8 last:mb-0 border-l-4 border-[#F9A61A] pl-6 ml-2">
                       <h4 className="text-xl font-semibold text-[#4a9eff] mb-2">
                         {role.title}
                       </h4>
@@ -127,10 +127,10 @@ export const Experience = () => {
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="text-base text-gray-600">Skills:</span>
-                        {role.skills.map((skill, skillIndex) => (
-                          <span key={skillIndex} className="text-base text-gray-700">
+                        {role.skills.map((skill) => (
+                          <span key={skill} className="text-base text-gray-700">
                             {skill}
-                            {skillIndex < role.skills.length - 1 ? ', ' : ''}
+                            {skill !== role.skills[role.skills.length - 1] ? ', ' : ''}
                           </span>
                         ))}
                       </div>

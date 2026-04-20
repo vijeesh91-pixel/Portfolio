@@ -91,7 +91,7 @@ export const Contact = () => {
           </div>
           
           <div className="flex gap-6 mb-8">
-            {socialLinks.map((link, index) => {
+            {socialLinks.map((link) => {
               const Icon = iconMap[link.icon];
               
               // Brand colors for each platform (shown on hover only)
@@ -106,7 +106,7 @@ export const Contact = () => {
               
               return (
                 <a 
-                  key={index}
+                  key={link.platform}
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"

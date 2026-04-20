@@ -32,8 +32,8 @@ export const Education = () => {
               </div>
               
               <ul className="space-y-3 text-gray-300">
-                {education.activities.map((activity, index) => (
-                  <li key={index} className="flex items-start gap-3">
+                {education.activities.map((activity) => (
+                  <li key={activity} className="flex items-start gap-3">
                     <span className="text-[#F9A61A] mt-1">•</span>
                     <span className="leading-relaxed">{activity}</span>
                   </li>

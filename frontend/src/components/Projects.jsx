@@ -12,7 +12,7 @@ export const Projects = () => {
   return (
     <section id="projects" className="py-24 bg-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-6xl font-bold mb-16">
+        <h2 className="text-6xl font-black mb-16">
           Projects<span className="text-[#F9A61A]">.</span>
         </h2>
         

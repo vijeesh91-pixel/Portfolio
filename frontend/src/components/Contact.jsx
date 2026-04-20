@@ -57,7 +57,7 @@ export const Contact = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl">
-          <h2 className="text-5xl md:text-6xl font-bold mb-8 text-[#05063F]">
+          <h2 className="text-5xl md:text-6xl font-black mb-8 text-[#05063F]">
             Let's Design <span className="text-[#05063F]">Together</span>
             <span className="text-[#F9A61A]">.</span>
           </h2>

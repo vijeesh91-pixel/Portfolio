@@ -5,7 +5,7 @@ export const Education = () => {
   return (
     <section id="education" className="py-24 bg-gradient-to-br from-[#0a0e27] via-[#1a1042] to-[#0f0b2e]">
       <div className="container mx-auto px-6">
-        <h2 className="text-6xl font-bold mb-16 text-white">
+        <h2 className="text-6xl font-black mb-16 text-white">
           Education<span className="text-[#F9A61A]">.</span>
         </h2>
         

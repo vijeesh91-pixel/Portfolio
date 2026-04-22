@@ -6,92 +6,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from './ui/accordion';
+import { experience as experienceData } from '../data/mock';
 
 export const Experience = () => {
-  const experienceData = [
-    {
-      company: "Oddup",
-      roles: [
-        {
-          title: "Sr UI/UX Designer",
-          company: "Oddup",
-          duration: "Dec 2024 - Present (1 yr 5 mos+)",
-          description: "Collaborating with the tech team to develop the Oddup trading platform Designing high fidelity, data-dense dashboards and complex application interfaces.",
-          skills: ["Product Design", "Figma", "Interaction Design", "Data Visualization"]
-        },
-        {
-          title: "UI/UX Designer",
-          company: "Oddup",
-          duration: "Jan 2022 - Dec 2024 (3 yrs)",
-          description: "Worked with marketing and tech teams to develop and update core products. Handled data-driven design dashboards, ran metrics, and campaigns.",
-          skills: ["User Interface Design", "Interaction Design", "Marketing", "Email Campaigns"]
-        },
-        {
-          title: "Interface Designer",
-          company: "Oddup",
-          duration: "Sep 2019 - Jan 2022 (2 yrs 5 mos)",
-          description: "Promoted to UI Designer for various sub-projects across the Oddup product suite. Collaborated with the marketing team on Recerve, Alluva, Stimulus Cheque, and Oddup product videos, generation, email design and digital assets.",
-          skills: ["Animation", "Branding", "Wireframing", "User Interface Design"]
-        },
-        {
-          title: "Graphics Designer",
-          company: "Oddup",
-          duration: "Sep 2018 - Oct 2019 (1 yr 2 mos)",
-          description: "Refreshed Oddup's visual identity through rebranding, website redesign, and multimedia design. Crafted digital and print advertising materials.",
-          skills: ["Wireframing", "Branding", "Visual Design"]
-        }
-      ]
-    },
-    {
-      company: "Alluva",
-      roles: [
-        {
-          title: "Team Member",
-          company: "Alluva",
-          duration: "Jan 2019 - Jul 2022 (3 yrs 7 mos)",
-          description: "Contributed to the design of Alluva, a platform incentivizing cryptocurrency asset prediction. Focused on analyst-driven data visualization and market insight features.",
-          skills: ["User Research", "Wireframing", "UI Design"]
-        }
-      ]
-    },
-    {
-      company: "Redrawlife",
-      roles: [
-        {
-          title: "Designer",
-          company: "Redrawlife",
-          duration: "Jan 2017 - Sep 2018 (1 yr 9 mos)",
-          description: "Designed marketing materials and interaction flows to support business growth.",
-          skills: ["Wireframing", "Figma", "Interaction Design"]
-        }
-      ]
-    },
-    {
-      company: "Caspo LLC",
-      roles: [
-        {
-          title: "Co-Founder",
-          company: "Caspo LLC",
-          duration: "Jan 2016 - Dec 2017 (2 yrs)",
-          description: "Developed and iterated on a smart cooking system that produces and uses hydrogen fuel Led product development from concept to commercial market launch.",
-          skills: ["Product Development", "Startups", "Entrepreneurship"]
-        }
-      ]
-    },
-    {
-      company: "Reinwo Labs",
-      roles: [
-        {
-          title: "Co-Founder",
-          company: "Reinwo Labs",
-          duration: "Aug 2014 - Dec 2016 (2 yrs 5 mos)",
-          description: "Co-founded Reinwo Labs, which designed a system converting tap water to usable hydrogen gas for cooking.",
-          skills: ["Product Design", "Engineering", "Startups"]
-        }
-      ]
-    }
-  ];
-
   return (
     <section id="experience" className="py-24 bg-white">
       <div className="container mx-auto px-6">

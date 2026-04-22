@@ -126,9 +126,35 @@ export const experience = [
     roles: [
       {
         title: "Sr UI/UX Designer",
-        duration: "Jan 2020 - Present",
-        description: "Led the design direction for Oddup's flagship products, creating intuitive interfaces for complex financial data. Collaborated with cross-border teams to deliver user-centric solutions.",
-        skills: ["Figma", "Webflow", "Design Systems", "User Research"]
+        company: "Oddup",
+        duration: "Dec 2024 - Present (1 yr 5 mos)",
+        location: "San Francisco, CA · Remote",
+        description: "Collaborating with the tech team to develop the Oddup trading platform and prediction market application. Currently working on high-density financial dashboards, improving data readability and decision speed.",
+        skills: ["Product Design", "Dashboards", "Figma", "Interaction Design", "Data Visualization"]
+      },
+      {
+        title: "UI/UX Designer",
+        company: "Oddup",
+        duration: "Jan 2022 - Dec 2024 (3 yrs)",
+        location: "San Francisco, CA · Remote",
+        description: "Worked with marketing and tech teams to develop and update core products. Created data-driven dashboards, Designed and executed email campaigns contributing to product engagement and retention.",
+        skills: ["User Interface Design", "Interaction Design", "Marketing", "Email Campaigns"]
+      },
+      {
+        title: "User Interface Designer",
+        company: "Oddup",
+        duration: "Sep 2019 - Jan 2022 (2 yrs 5 mos)",
+        location: "San Francisco, CA · Remote",
+        description: "Promoted to UI Designer for various sub-projects across the Oddup product suite. Collaborated with the marketing team on Recerve, Alluva, Stimulus Cheque, and Oddup products. Handled video generation, email design, and digital assets.",
+        skills: ["Animation", "Branding", "Wireframing", "User Interface Design"]
+      },
+      {
+        title: "Graphic Designer",
+        company: "Oddup",
+        duration: "Sep 2018 - Oct 2019 (1 yr 2 mos)",
+        location: "San Francisco, CA · Remote",
+        description: "Enhanced Oddup's visual identity through rebranding, website redesign, and multimedia design. Produced digital and print advertising materials.",
+        skills: ["Wireframing", "Branding", "Visual Design"]
       }
     ]
   },
@@ -136,21 +162,25 @@ export const experience = [
     company: "Alluva",
     roles: [
       {
-        title: "UI/UX Designer",
-        duration: "Jul 2019 - Dec 2019",
-        description: "Designed prediction platform interfaces focusing on user engagement and gamification elements.",
-        skills: ["UI Design", "UX Research", "Prototyping"]
+        title: "Team Member – Design",
+        company: "Alluva",
+        duration: "Jan 2019 - Jul 2022 (3 yrs 7 mos)",
+        location: "Hong Kong SAR · Remote",
+        description: "Contributed to the design of Alluva, a platform incentivizing cryptocurrency asset predictions. Focused on analyst-driven data visualization and market insight features.",
+        skills: ["User Research", "Wireframing", "UI Design"]
       }
     ]
   },
   {
-    company: "Redrvville",
+    company: "Redrawlife",
     roles: [
       {
-        title: "Interface Designer",
-        duration: "Jan 2018 - Jun 2019",
-        description: "Created beautiful and functional interfaces for mobile and web applications.",
-        skills: ["Visual Design", "Interaction Design", "Adobe Creative Suite"]
+        title: "Designer",
+        company: "Redrawlife",
+        duration: "Jan 2017 - Sep 2018 (1 yr 9 mos)",
+        location: "Cochin, Kerala, India · On-site",
+        description: "Designed marketing materials and interaction flows to support business growth.",
+        skills: ["Wireframing", "Figma", "Interaction Design"]
       }
     ]
   },
@@ -158,21 +188,25 @@ export const experience = [
     company: "Caspo LLC",
     roles: [
       {
-        title: "Graphics Designer",
-        duration: "Jul 2016 - Dec 2017",
-        description: "Developed brand identities and marketing materials for hardware startup.",
-        skills: ["Branding", "Print Design", "Digital Graphics"]
+        title: "Co-Founder",
+        company: "Caspo LLC",
+        duration: "Jan 2016 - Dec 2017 (2 yrs)",
+        location: "Oak Brooks, Illinois",
+        description: "Co-founded and led product development of a hydrogen-based cooking system from concept to prototype, bridging engineering and design. Led product development from concept to commercial market launch.",
+        skills: ["Product Development", "Startups", "Entrepreneurship"]
       }
     ]
   },
   {
-    company: "Reinwo Labs",
+    company: "Reinwo",
     roles: [
       {
         title: "Co-Founder",
-        duration: "Jan 2015 - Jun 2016",
-        description: "Co-founded design consultancy focused on helping startups establish their design foundations.",
-        skills: ["Business Strategy", "Client Relations", "Project Management"]
+        company: "Reinwo",
+        duration: "Aug 2014 - Dec 2016 (2 yrs 5 mos)",
+        location: "Kochi, Kerala, India",
+        description: "Co-founded Reinwo Labs, which designed a system converting tap water to usable hydrogen gas for cooking.",
+        skills: ["Product Design", "Engineering", "Startups"]
       }
     ]
   }
@@ -183,10 +217,8 @@ export const education = {
   university: "Cochin University of Science and Technology",
   duration: "2010 - 2014",
   activities: [
-    "Participated in various tech seminars and workshops focused on emerging technologies",
-    "Completed multiple design certification courses in UI/UX and digital product design",
-    "Engaged in continuous learning through online platforms and industry conferences",
-    "Active member of design communities and contributor to open-source design projects"
+    "Dhishna 2012, SAE-Supra 2013, Startup Summit 2013, Alchemin 2014",
+    "Shaastra 2010 & 2012: Won 1st Prize (2010) and 2nd Prize (2012) at Junkyard Wars, IIT Madras - Asia's 2nd largest Tech-fest"
   ]
 };
 
